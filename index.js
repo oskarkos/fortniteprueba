@@ -28,6 +28,6 @@ app.post('/', function(req, res){
     });
 });
 
-var port = process.env.PORT || 3000;
-
-app.listen(port);
+http.listen((process.env.PORT || 3000), function(){
+    console.log('listening on *:5000');
+  });
